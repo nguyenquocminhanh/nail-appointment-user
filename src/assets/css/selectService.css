@@ -76,6 +76,7 @@
 
     .navigate-btn-container {
         padding: 0 10rem;
+        margin-bottom: 30px;
     }
 
     .type-container {
@@ -110,7 +111,6 @@
 
     .navigate-btn-container {
         padding: 0 10rem;
-        margin-bottom: 30px;
     }
 
     .type-container,
