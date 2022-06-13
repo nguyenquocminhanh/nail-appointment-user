@@ -3,6 +3,7 @@ import axios from 'axios';
 import AppURL from '../../api/AppURL';
 import { withRouter} from 'react-router-dom';
 import { Modal, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import Spinner from '../common/Spinner';
 
 class SelectService extends Component {
   constructor(props) {
@@ -24,6 +25,8 @@ class SelectService extends Component {
         isStaffModal: false,
         isServiceModal: false,
         mainDiv: "d-none",
+
+        isLoading: true
     }
   }
 
@@ -33,7 +36,8 @@ class SelectService extends Component {
             this.setState({
                 services: response.data,
                 filteredServices: response.data,
-                mainDiv: ""
+                mainDiv: "",
+                isLoading: false
             })
         }
     }).catch(error => {
@@ -46,7 +50,8 @@ class SelectService extends Component {
           this.setState({
               staffs: response.data,
               filteredStaffs: response.data,
-              mainDiv: ""
+              mainDiv: "",
+              isLoading: false
           })
       }
     }).catch(error => {
@@ -142,6 +147,8 @@ class SelectService extends Component {
   }
 
   render() {
+    const spinner = this.state.isLoading ? <div className="spinner-container"><Spinner/></div> : null;
+
     const allServices = this.state.filteredServices;
     let serviceList = null;
     if (this.state.filteredServices && this.state.filteredServices.length > 0) {
@@ -190,7 +197,7 @@ class SelectService extends Component {
       )})
     } 
 
-    let myView = 
+    let myView = !this.state.isLoading ? 
     <div className="type-container d-grid gap-3 border-0">
       <div className="d-flex justify-content-center align-items-center">
         <div className="form w-100">
@@ -200,10 +207,10 @@ class SelectService extends Component {
         </div>
       </div>
       {serviceList}
-    </div>
+    </div> : spinner
 
     if (!this.state.isService) {
-      myView = 
+      myView = !this.state.isLoading ? 
       <div>
         <div className="type-container row height d-flex justify-content-center align-items-center">
           <div className="col-md-12">
@@ -218,7 +225,7 @@ class SelectService extends Component {
         <div className="d-flex flex-wrap w-100 staff-container">
           {staffList}
         </div>
-      </div>
+      </div> : spinner
     }
 
     return (

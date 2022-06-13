@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { Container } from 'react-bootstrap';
 import axios from 'axios';
 import AppURL from '../../api/AppURL';
-import Spinner from './Spinner';
 
 class CompanyInfo extends Component {
   constructor() {
@@ -36,8 +35,6 @@ class CompanyInfo extends Component {
   }
 
   render() {
-    const spinner = this.state.isLoading ? <div className="spinner-container"><Spinner/></div> : null;
-
     return (
       <Fragment>
         <div className={this.state.mainDiv + ' info-container'}>
@@ -54,8 +51,6 @@ class CompanyInfo extends Component {
             </Container>
         </div>
 
-          {spinner}
-  
       </Fragment>
     )
   }
