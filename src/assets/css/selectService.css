@@ -1,0 +1,131 @@
+.select-service-container {
+    padding: 0 0 5.33vw;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.navigate-btn-container {
+    padding: 0;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.type-container,
+.staff-container,
+.form-container {
+    padding: 2.67vw 4.67vw;
+}
+
+.type-item {
+    width: calc(50% - 1.33vw);
+    height: 12.8vw;
+    border: 1px solid #5e73ff;
+    color: #5e73ff;
+    border-radius: 6.67vw;
+    font-size: 4.86486vw;
+    cursor: pointer;
+}
+
+.active {
+    background: #5e73ff;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.list-item,
+.list-group-item:first-child,
+.list-group-item:last-child {
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.list-group-item+.list-group-item {
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item:hover,
+.list-group-item:focus {
+    background-color: #f6f6f6;
+}
+
+.staff-item-component {
+    margin: 0.3rem 0;
+    border-radius: 0.75rem;
+    width: 100%;
+    padding: 1.33rem 0.72rem;
+    box-shadow: 10px 24px 54px rgba(0,0,0,.06)!important;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+.staff-item-component:hover,
+.staff-item-component:focus {
+    background-color: #f6f6f6;
+}
+
+.picked {
+    background-color: #f6f6f6;
+    border-color: var(--bs-blue) !important;
+    box-shadow: 0 0 0 2px var(--bs-blue) !important;
+}
+
+@media (min-width: 768px) {
+    .select-service-container {
+        padding: 0 5rem 0rem;
+    }
+
+    .navigate-btn-container {
+        padding: 0 10rem;
+    }
+
+    .type-container {
+        padding: 0.625rem 7.56rem;
+    }
+
+    .form-container {
+        padding: 0;
+    }
+
+    .type-item {
+        width: calc(50% - 0.5rem);
+        height: 2.7rem;
+        border-radius: 1.5rem !important;
+        font-size: 18px;
+    }
+
+    .staff-item-component {
+        margin: 0.5rem;
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 959px) {
+    .staff-container {
+        padding: 0;
+    }
+
+    .select-service-container {
+        padding: 0 10rem 5rem;
+    }
+
+    .navigate-btn-container {
+        padding: 0 10rem;
+    }
+
+    .type-container,
+    .form-container {
+        padding: 0.625rem 7.56rem;
+    }
+
+    .type-item {
+        width: calc(50% - 0.5rem);
+        height: 2.7rem;
+        border-radius: 1.5rem !important;
+        font-size: 18px;
+    }
+
+    .staff-item-component {
+        margin: 0.5rem;
+        width: calc(50% - 1rem);
+    }
+}

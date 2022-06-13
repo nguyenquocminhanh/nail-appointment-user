@@ -1,6 +1,13 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Web Booking",
+  "name": "Web Booking",
+  "description": "Web Booking System",
+  "language": "en-US",
+  "start_url": "/",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "favicon.ico",
@@ -17,9 +24,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }

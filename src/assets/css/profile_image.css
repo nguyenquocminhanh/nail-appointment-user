@@ -1,0 +1,8 @@
+.profile-image-container {
+    width: 2.32rem;
+    min-width: 2.32rem;
+    height: 2.32rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    background-color: lightgray;
+}

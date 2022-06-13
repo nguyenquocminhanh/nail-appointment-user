@@ -1,0 +1,11 @@
+.time-date-container {
+    padding: 0 0 5.33vw;
+    max-width: 1024px;
+    margin: auto;
+}
+
+@media (min-width: 959px) {
+    .time-date-container {
+        padding: 0 6.14rem 3.125rem 5.27rem
+    }
+}

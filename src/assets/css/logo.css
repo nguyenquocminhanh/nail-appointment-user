@@ -1,0 +1,15 @@
+.logo-container {
+    max-width: 22.4vw;
+    height: 22.4vw;
+    margin: auto;
+    box-shadow: 0 0 8vw rgb(116 16 255 / 10%);
+    border-radius: 50%;
+}
+
+@media (min-width: 959px) {
+    .logo-container {
+        max-width: 5.25rem;
+        height: 5.25rem;
+        
+    }
+}
