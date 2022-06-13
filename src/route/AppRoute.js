@@ -22,18 +22,18 @@ class AppRoute extends Component {
   render() {
     return (
       <Fragment>
-          <div className='Desktop'>
-            <img style={{width: '100%', height: '15vh'}} src='https://booking.gocheckin.net/images/banner-bg.png'/>
-          </div>
-          <CompanyInfo/>
+        <div className='Desktop'>
+          <img style={{width: '100%', height: '15vh'}} src='https://booking.gocheckin.net/images/banner-bg.png'/>
+        </div>
+        <CompanyInfo/>
 
-          <Switch>
-            <Route exact path="/" render={(props) => <HomePage {...props} key={Date.now()}/>}/>
-            <Route exact path="/confirm" render={(props) => <ConfirmPage {...props} key={Date.now()}/>}/>
-            <Route exact path="/date-time" render={(props) => <DateTimePage {...props} key={Date.now()}/>}/>
-            <Route exact path="/book" render={(props) => <BookPage {...props} key={Date.now()}/>}/>
-            <Route exact path="/thankyou" render={(props) => <ThankyouPage {...props} key={Date.now()}/>}/>
-          </Switch>
+        <Switch>
+          <Route exact path="/" render={(props) => <HomePage {...props} key={Date.now()}/>}/>
+          <Route exact path="/confirm" render={(props) => <ConfirmPage {...props} key={Date.now()}/>}/>
+          <Route exact path="/date-time" render={(props) => <DateTimePage {...props} key={Date.now()}/>}/>
+          <Route exact path="/book" render={(props) => <BookPage {...props} key={Date.now()}/>}/>
+          <Route exact path="/thankyou" render={(props) => <ThankyouPage {...props} key={Date.now()}/>}/>
+        </Switch>
       </Fragment>
     )
   }

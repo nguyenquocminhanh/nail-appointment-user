@@ -3,7 +3,6 @@ import axios from 'axios';
 import AppURL from '../../api/AppURL';
 import { withRouter} from 'react-router-dom';
 import { Modal, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import UserPNG from '../../assets/images/user.png';
 
 class SelectService extends Component {
   constructor(props) {
@@ -178,7 +177,7 @@ class SelectService extends Component {
           <div className="row">
             <div className="col d-flex align-items-center">
               <div className="profile-image-container">
-                <img src={staff['profile_image'] ? staff['profile_image'] : UserPNG} style={{maxHeight: "100%"}}/>
+                <img src={staff['profile_image'] ? staff['profile_image'] : 'https://minh-nail.s3.us-east-2.amazonaws.com/images/staff/user.png'} style={{maxHeight: "100%", width: '100%'}}/>
               </div>
               &nbsp;&nbsp;
               <span>{staff['name']}</span>
