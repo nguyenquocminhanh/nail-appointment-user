@@ -1,5 +1,5 @@
 class AppURL {
-    static BaseURL = "http://127.0.0.1:8001/api";
+    static BaseURL = "http://minh-nail-admin.beauty/api";
 
     static BusinessInfo = this.BaseURL + '/business/info';
     static ServiceAll = this.BaseURL + '/service/all';
