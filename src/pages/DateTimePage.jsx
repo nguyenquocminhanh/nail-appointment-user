@@ -149,7 +149,7 @@ class DateTimePage extends Component {
         // all TIMESLOTS
         timeSlotsList = 
         <div className='row gx-3 gy-4'>
-          {timeSlots.filter(slot => {return new Date(Date.parse(this.state.pickedDate + " " + slot['time'])) < new Date(Date.parse(this.state.pickedDate + " 12:00 PM"))}).length > 0 ? <div >Morning</div> : null}
+          {timeSlots.filter(slot => {return new Date(Date.parse(this.state.pickedDate + " " + slot['time'])) < new Date(Date.parse(this.state.pickedDate + " 12:00 PM"))}).length > 0 ? <div style={{marginTop: '15px'}}>Morning</div> : null}
           {timeSlots.filter(slot => {return new Date(Date.parse(this.state.pickedDate + " " + slot['time'])) < new Date(Date.parse(this.state.pickedDate + " 12:00 PM"))}).map((slot, i) => {
             return (
               // MORNING

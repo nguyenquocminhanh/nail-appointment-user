@@ -1,18 +1,18 @@
 {
-  "short_name": "Web Booking",
-  "name": "Web Booking",
-  "description": "Web Booking System",
+  "short_name": "Appointment Booking System",
+  "name": "Appointment Booking System",
+  "description": "Appointment Booking System",
   "language": "en-US",
   "start_url": "/",
   "orientation": "portrait",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#5e73ff",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "nail.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
       "src": "logo192.png",

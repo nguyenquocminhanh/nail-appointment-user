@@ -42,15 +42,15 @@ class CompanyInfo extends Component {
       <Fragment>
         <div className={this.state.mainDiv + ' info-container'}>
             <Container className='text-center' fluid={"true"}>
-                <div className="logo-container">
-                    <img className="rounded-circle avatar-xl" src={this.state.data['logo_image']} alt="..."/>
-                </div><br></br>
+      
+              <img className="rounded-circle avatar-xl" src={this.state.data['logo_image']} alt="..."/>
+              <p></p>
 
-                <div className='section-title text-center mb-55'>
-                    <h3>{this.state.data['name']}</h3>
-                    <h5>{this.state.data['address']}</h5>
-                    <p>{this.state.data['phone_number']}</p>
-                </div>
+              <div className='section-title text-center mb-55'>
+                  <h3>{this.state.data['name']}</h3>
+                  <h5>{this.state.data['address']}</h5>
+                  <p>{this.state.data['phone_number']}</p>
+              </div>
             </Container>
         </div>
 

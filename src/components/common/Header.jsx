@@ -8,7 +8,6 @@ export class Header extends Component {
 
                 <strong>{this.props.children}</strong>
             </div>
-            <br></br>
         </div>
     )
   }
